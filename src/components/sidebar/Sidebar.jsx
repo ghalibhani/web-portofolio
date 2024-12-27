@@ -10,40 +10,40 @@ function Sidebar() {
       <nav className=''>
         <div className=''>
           {/* Menu Links */}
-          <ul className='flex flex-col items-center space-y-4'>
+          <ul className='flex flex-col items-center space-y-6'>
             <li>
               <a href='#home' className='hover:text-gray-300'>
-                <i className='icon-home'></i>
+                <i className='hover:text-yellow-500 transition-all text-2xl icon-home'></i>
               </a>
             </li>
             <li>
               <a href='#about' className='hover:text-gray-300'>
-                <i className='icon-user-following'></i>
+                <i className='hover:text-yellow-500 transition-all text-2xl icon-user-following'></i>
               </a>
             </li>
             <li>
               <a href='#services' className='hover:text-gray-300'>
-                <i className='icon-briefcase'></i>
+                <i className='hover:text-yellow-500 transition-all text-2xl icon-briefcase'></i>
               </a>
             </li>
             <li>
               <a href='#resume' className='hover:text-gray-300'>
-                <i className='icon-graduation'></i>
+                <i className='hover:text-yellow-500 transition-all text-2xl icon-graduation'></i>
               </a>
             </li>
             <li>
               <a href='#portofolio' className='hover:text-gray-300'>
-                <i className='icon-layers'></i>
+                <i className='hover:text-yellow-500 transition-all text-2xl icon-layers'></i>
               </a>
             </li>
             <li>
               <a href='#blog' className='hover:text-gray-300'>
-                <i className='icon-note'></i>
+                <i className='hover:text-yellow-500 transition-all text-2xl icon-note'></i>
               </a>
             </li>
             <li>
               <a href='#contact' className='hover:text-gray-300'>
-                <i className='icon-bubble'></i>
+                <i className='hover:text-yellow-500 transition-all text-2xl icon-bubble'></i>
               </a>
             </li>
           </ul>
