@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Sidebar />
-      <main>
+      <main className="ml-[5rem]">
         <Home />
         <About />
         <Service />
