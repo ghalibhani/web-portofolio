@@ -8,22 +8,25 @@ import Resume from "./components/resume/Resume";
 import Service from "./components/services/Service";
 import Sidebar from "./components/sidebar/Sidebar";
 import Testimonial from "./components/testimonial/Testimonial";
+import { BackgroundLines } from "./components/ui/background-lines";
 
 function App() {
   return (
     <>
       <Sidebar />
-      <main className="ml-[5rem]">
-        <Home />
-        <About />
-        <Service />
-        <Resume />
-        <Portofolio />
-        <Pricing />
-        <Testimonial />
-        <Blog />
-        <Contact />
-      </main>
+      <BackgroundLines>
+        <main className='ml-[5rem] relative z-40'>
+          <Home />
+          <About />
+          <Service />
+          <Resume />
+          <Portofolio />
+          <Pricing />
+          <Testimonial />
+          <Blog />
+          <Contact />
+        </main>
+      </BackgroundLines>
     </>
   );
 }
