@@ -4,8 +4,8 @@ import AboutBox from "./AboutBox";
 
 function About() {
   return (
-    <section className='h-screen flex flex-col justify-center px-36' id='about'>
-      <h2 className='font-bold text-3xl'>About Me</h2>
+    <section className='flex pt-36 flex-col justify-center px-36' id='about'>
+      <h2 className='font-bold text-5xl'>About Me</h2>
       <div className='mt-8 flex items-center'>
         <div className='w-80'>
           <img src={Image} className='w-56' alt='' />
