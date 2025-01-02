@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         rubik: ["Rubik", "serif"],
       },
+      scrollBehavior: "smooth",
     },
   },
   plugins: [addVariablesForColors],
