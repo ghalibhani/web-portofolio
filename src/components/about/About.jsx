@@ -4,7 +4,10 @@ import AboutBox from "./AboutBox";
 
 function About() {
   return (
-    <section className='flex pt-36 flex-col justify-center md:px-36 px-8' id='about'>
+    <section
+      className='flex pt-36 flex-col justify-center md:px-36 px-8'
+      id='about'
+    >
       <h2 className='font-bold text-5xl'>About Me</h2>
       <div className='mt-8 md:flex items-center'>
         <div className='md:w-80 flex justify-center'>
@@ -20,7 +23,12 @@ function About() {
             </p>
             <button
               className='bg-[#FF5733] w-52 mt-4 tracking-wider px-8 py-2 text-white font-[1000] rounded-3xl hover:scale-110 hover:bg-[#ff8469] transition-transform duration-300 ease-in-out'
-              href='#contact'
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/1Rl7S0iLw98oy2rPXFqMOc9AGmEt53yKr/view?usp=drive_link",
+                  "_blank"
+                );
+              }}
             >
               Download CV
             </button>
