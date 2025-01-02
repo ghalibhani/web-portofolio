@@ -12,7 +12,10 @@ function Portofolio() {
   };
 
   return (
-    <section id='services' className='pt-40 flex flex-col justify-center px-36'>
+    <section
+      id='portofolio'
+      className='pt-40 flex flex-col justify-center px-36'
+    >
       <h2 className='font-bold text-5xl'>Recent Works</h2>
       <div className='flex justify-center gap-4 mt-10'>
         <span

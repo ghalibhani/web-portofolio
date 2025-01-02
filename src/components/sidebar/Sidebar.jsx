@@ -36,11 +36,11 @@ function Sidebar() {
                 <i className='hover:text-yellow-500 transition-all text-2xl icon-layers'></i>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href='#blog' className='hover:text-gray-300'>
                 <i className='hover:text-yellow-500 transition-all text-2xl icon-note'></i>
               </a>
-            </li>
+            </li> */}
             <li>
               <a href='#contact' className='hover:text-gray-300'>
                 <i className='hover:text-yellow-500 transition-all text-2xl icon-bubble'></i>
