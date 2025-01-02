@@ -28,19 +28,19 @@ function Service() {
     },
   ];
   return (
-    <section id='services' className='pt-40 flex flex-col justify-center px-36'>
+    <section id='services' className='md:pt-40 pt-28 flex flex-col justify-center md:px-36 px-8'>
       <h2 className='font-bold text-5xl'>Services</h2>
-      <div className='flex justify-center gap-12 mt-16'>
+      <div className='md:flex justify-center gap-12 mt-16'>
         {data.map((item, index) => {
           const color = ["bg-purple-400", "bg-blue-400", "bg-red-400"];
           const bgColor = color[index % color.length];
           return (
             <div
-              className={`flex flex-col w-[500px] p-10 rounded-3xl ${bgColor} justify-center items-center`}
+              className={`flex flex-col mb-5 md:mb-0 md:w-[500px] p-10 rounded-3xl ${bgColor} justify-center items-center`}
               key={item.id}
             >
               <img className='w-40 h-40' src={item.image} alt='' />
-              <h1 className='font-bold my-4 text-2xl text-white'>
+              <h1 className='font-bold text-center my-4 text-2xl text-white'>
                 {item.title}
               </h1>
               <p className='text-center font-semibold text-white'>{item.description}</p>

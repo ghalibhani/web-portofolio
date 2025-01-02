@@ -3,7 +3,7 @@ import Data from "./Data";
 
 function Resume() {
   return (
-    <section id='resume' className='pt-40 flex flex-col justify-center px-36'>
+    <section id='resume' className='md:pt-40 pt-28 flex flex-col justify-center md:px-36 px-8'>
       <h2 className='font-bold text-5xl'>Experience</h2>
       <div className='mt-16'>
         {Data.map((item, index) => {

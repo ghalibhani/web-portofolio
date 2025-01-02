@@ -4,14 +4,14 @@ import AboutBox from "./AboutBox";
 
 function About() {
   return (
-    <section className='flex pt-36 flex-col justify-center px-36' id='about'>
+    <section className='flex pt-36 flex-col justify-center md:px-36 px-8' id='about'>
       <h2 className='font-bold text-5xl'>About Me</h2>
-      <div className='mt-8 flex items-center'>
-        <div className='w-80'>
+      <div className='mt-8 md:flex items-center'>
+        <div className='md:w-80 flex justify-center'>
           <img src={Image} className='w-56' alt='' />
         </div>
-        <div className='ml-16 p-8 rounded-xl shadow-2xl flex gap-14'>
-          <div className='w-1/2 flex flex-col justify-center'>
+        <div className='md:ml-16 p-8 rounded-xl shadow-2xl md:flex gap-14'>
+          <div className='md:w-1/2 flex flex-col justify-center'>
             <p className='mt-4 text-justify text-gray-600'>
               Hello am Ghalib Hani Pratama, a Full Stack Developer from
               Indonesia. I have rich experience in web site design and building,
@@ -25,7 +25,7 @@ function About() {
               Download CV
             </button>
           </div>
-          <div className='w-1/2'>
+          <div className='md:w-1/2 mt-4 md:mt-0'>
             {/* ------------------ */}
             <div>
               <h1 className='text-gray-600 font-semibold'>JavaScript</h1>

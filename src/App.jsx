@@ -12,7 +12,7 @@ function App() {
     <>
       <Sidebar />
       <BackgroundLines>
-        <main className='ml-[5rem] relative z-40'>
+        <main className='md:ml-[5rem] relative z-30'>
           <Home />
           <About />
           <Service />

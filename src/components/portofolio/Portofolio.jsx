@@ -14,41 +14,41 @@ function Portofolio() {
   return (
     <section
       id='portofolio'
-      className='pt-40 flex flex-col justify-center px-36'
+      className='md:pt-40 pt-28 flex flex-col justify-center md:px-36 px-8'
     >
       <h2 className='font-bold text-5xl'>Recent Works</h2>
-      <div className='flex justify-center gap-4 mt-10'>
+      <div className='flex flex-col md:flex-row justify-center gap-4 mt-10'>
         <span
-          className='bg-yellow-300 px-4 py-1 font-semibold rounded-xl cursor-pointer'
+          className='bg-yellow-300 px-4 text-center py-1 font-semibold rounded-xl cursor-pointer'
           onClick={() => setItems(Menu)}
         >
           Everything
         </span>
         <span
-          className='bg-yellow-300 px-4 py-1 font-semibold rounded-xl cursor-pointer'
+          className='bg-yellow-300 px-4 text-center py-1 font-semibold rounded-xl cursor-pointer'
           onClick={() => filterItem("Web")}
         >
           Web Developer
         </span>
         <span
-          className='bg-yellow-300 px-4 py-1 font-semibold rounded-xl cursor-pointer'
+          className='bg-yellow-300 px-4 text-center py-1 font-semibold rounded-xl cursor-pointer'
           onClick={() => filterItem("API")}
         >
           API Developer
         </span>
         <span
-          className='bg-yellow-300 px-4 py-1 font-semibold rounded-xl cursor-pointer'
+          className='bg-yellow-300 px-4 text-center py-1 font-semibold rounded-xl cursor-pointer'
           onClick={() => filterItem("Mobile")}
         >
           Mobile Developer
         </span>
       </div>
-      <div className='grid grid-cols-3 mt-8 gap-8'>
+      <div className='grid grid-cols-3 mt-8 md:gap-8 gap-2'>
         {items.map((item) => {
           const { id, image, title, category } = item;
           return (
             <div
-              className='shadow-lg rounded-3xl p-6 relative overflow-hidden group'
+              className='shadow-lg rounded-3xl md:p-6 relative overflow-hidden group'
               key={id}
             >
               <div>
