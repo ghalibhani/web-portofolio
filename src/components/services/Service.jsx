@@ -3,6 +3,7 @@ import Image1 from "../../assets/service-1.svg";
 import Image2 from "../../assets/service-2.svg";
 import Image3 from "../../assets/service-3.svg";
 import { col } from "framer-motion/client";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
 function Service() {
   const data = [
@@ -28,23 +29,50 @@ function Service() {
     },
   ];
   return (
-    <section id='services' className='md:pt-40 pt-28 flex flex-col justify-center md:px-36 px-8'>
+    <section
+      id='services'
+      className='md:pt-40 pt-28 flex flex-col justify-center md:px-36 px-8'
+    >
       <h2 className='font-bold text-5xl'>Services</h2>
-      <div className='md:flex justify-center gap-12 mt-16'>
+      <div className='md:flex justify-center mt-16 gap-12'>
         {data.map((item, index) => {
           const color = ["bg-purple-400", "bg-blue-400", "bg-red-400"];
           const bgColor = color[index % color.length];
           return (
-            <div
-              className={`flex flex-col mb-5 md:mb-0 md:w-[500px] p-10 rounded-3xl ${bgColor} justify-center items-center`}
-              key={item.id}
-            >
-              <img className='w-40 h-40' src={item.image} alt='' />
-              <h1 className='font-bold text-center my-4 text-2xl text-white'>
-                {item.title}
-              </h1>
-              <p className='text-center font-semibold text-white'>{item.description}</p>
-            </div>
+            <CardContainer className='mt-8 md:mt-0 inter-var'>
+              <CardBody
+                className={`${bgColor} relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border`}
+                key={item.id}
+              >
+                <CardItem
+                  translateZ='100'
+                  rotateX={20}
+                  rotateZ={-10}
+                  className='w-full mt-4 flex justify-center'
+                >
+                  <img
+                    src={item.image}
+                    height='1000'
+                    width='1000'
+                    className='h-40 w-40 object-cover rounded-xl group-hover/card:shadow-xl'
+                    alt='thumbnail'
+                  />
+                </CardItem>
+                <CardItem
+                  translateZ='50'
+                  className='font-bold w-full text-center my-4 text-3xl text-white'
+                >
+                  {item.title}
+                </CardItem>
+                <CardItem
+                  as='p'
+                  translateZ='60'
+                  className='text-center text-white'
+                >
+                  {item.description}
+                </CardItem>
+              </CardBody>
+            </CardContainer>
           );
         })}
       </div>

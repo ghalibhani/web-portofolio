@@ -2,6 +2,8 @@ import React from "react";
 import Me from "../../assets/avatar-1.svg";
 import HeaderSocials from "./HeaderSocials";
 import ScrollDown from "./ScrollDown";
+import { Cover } from "../ui/cover";
+import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 
 function Home() {
   return (
@@ -11,9 +13,11 @@ function Home() {
     >
       <div className='text-center  p-4 rounded-2xl'>
         <img src={Me} className='mx-auto' alt='' />
-        <h1 className='text-5xl mt-6 mb-2 font-[900]'>Ghalib Hani Pratama</h1>
+        <h1 className='text-5xl mt-6 mb-2 font-[900]'>
+          <TypewriterEffectSmooth words={[{ text: "Ghalib Hani Pratama" }]} />
+        </h1>
         <span className='text-gray-700 text-lg'>
-          I'm a Full Stack Developer
+          I'm a <Cover>Full Stack Developer</Cover>
         </span>
         <HeaderSocials />
         <button

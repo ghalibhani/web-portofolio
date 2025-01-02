@@ -45,7 +45,7 @@ function Portofolio() {
       </div>
       <div className='grid grid-cols-3 mt-8 md:gap-8 gap-2'>
         {items.map((item) => {
-          const { id, image, title, category } = item;
+          const { id, image, title, category, link } = item;
           return (
             <div
               className='shadow-lg rounded-3xl md:p-6 relative overflow-hidden group'
@@ -63,7 +63,7 @@ function Portofolio() {
               </h3>
               <a
                 className='text-white absolute text-2xl font-semibold bottom-6 bg-yellow-400 h-14 w-14 flex justify-center items-center cursor-pointer rounded-full transition-all opacity-0 group-hover:opacity-100'
-                href='#'
+                href={`${link}`}
               >
                 <i className='icon-link'></i>
               </a>
