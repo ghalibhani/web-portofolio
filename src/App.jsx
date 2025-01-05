@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Home from "./components/home/Home";
+import Portofolio from "./components/portofolio/Portofolio";
+import Resume from "./components/resume/Resume";
+import Service from "./components/services/Service";
+import Sidebar from "./components/sidebar/Sidebar";
+import { BackgroundLines } from "./components/ui/background-lines";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Sidebar />
+      <BackgroundLines>
+        <main className='md:ml-[5rem] relative z-30'>
+          <Home />
+          <About />
+          <Service />
+          <Resume />
+          <Portofolio />
+          <Contact />
+        </main>
+      </BackgroundLines>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
