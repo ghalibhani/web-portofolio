@@ -59,7 +59,7 @@
 // export default Sidebar;
 
 import React, { useState } from "react";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../../public/logo-g.png";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
